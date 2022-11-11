@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Aravind_BannerSlider::reports" title="Banner Slider" module="Aravind_BannerSlider" sortOrder="41" resource="Aravind_BannerSlider::reports"/>        
-        <add id="Aravind_BannerSlider::sliders" title="Manage Slider" module="Aravind_BannerSlider" sortOrder="10" action="custom/slider" resource="Aravind_BannerSlider::sliders" parent="Aravind_BannerSlider::reports"/>
-    </menu>
-</config>
