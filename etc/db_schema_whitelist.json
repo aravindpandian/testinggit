@@ -1,0 +1,15 @@
+{
+    "custom_banner_slider": {
+        "column": {
+            "entity_id": true,
+            "banner_id": true,
+            "title": true,
+            "image": true,
+            "valid_from": true,
+            "valid_to": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
