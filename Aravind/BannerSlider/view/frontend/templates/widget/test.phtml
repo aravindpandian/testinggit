@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @var \Mageplaza\HelloWorld\Block\Display $block
+ */
+
+$mediaurl = $block->mediaurl();
+?>
+
+<div class="owl-carousel owl-theme" style="max-width:90%;height:500px">
+<?php 
+foreach ($block->getPostCollection() as $key=>$post){
+?>
+<img src="<?php echo $mediaurl . $post->getImage(); ?>"></img>
+<?php
+}
+?>
+
+</div>
+
+<script>
+        require(['jquery', 'underscore', 'owl_carousel', 'owl_config' ],
+            function ($, _) {
+                $(document).ready(function() {
+                    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+                });
+            });
+
+</script>      
+
+
